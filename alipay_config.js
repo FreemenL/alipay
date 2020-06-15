@@ -15,7 +15,7 @@ const path = require('path');
 // };
 // 沙箱环境
 const AlipayBaseConfig = {
-    appId: 2021001166664595, // 应用 ID
+    appId: 2021001166664595, // 应用 ID https://developers.alipay.com/platform/appManage.htm#/app/2021001166664595/overview
     privateKey: fs.readFileSync(path.join(__dirname, './sandbox-pem/private_pem2048.txt'), 'ascii'), // 应用私钥
     alipayPublicKey: fs.readFileSync(path.join(__dirname, './sandbox-pem/public_pem2048.txt'), 'ascii'),// 支付宝公钥
     gateway: 'https://openapi.alipay.com/gateway.do', // 支付宝的应用网关
